@@ -52,7 +52,7 @@ exec &> /root/stackscript.log
 source <ssinclude StackScriptID="1"> # StackScript Bash Library
 system_update
 
-source <ssinclude StackScriptID="6583"> # etckeeper and friends
+source <ssinclude StackScriptID="6483"> # etckeeper and friends
 system_install_git
 system_start_etc_dir_versioning #start recording changes of /etc config files
 
