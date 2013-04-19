@@ -134,6 +134,7 @@ if [ "$SETUP_MYSQL" == "Yes" ]; then
     mysql_create_user "$MYSQL_DATABASE_PASSWORD" "$MYSQL_USER" "$MYSQL_PASSWORD"
     mysql_grant_user "$MYSQL_DATABASE_PASSWORD" "$MYSQL_USER" "$MYSQL_DATABASE"
     set -u
+    { echo "$MYSQL_PASSWORD"; echo n; yes; } | mysql_secure_installation
     system_record_etc_dir_changes "Configured MySQL"
 fi
 
