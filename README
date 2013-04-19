@@ -6,4 +6,6 @@ By default, it creates a VirtualHost using the reverse DNS of your Linode's prim
 
 Installs common system and dev utilities, sets up postfix loopback, Uncomplicated Firewall and Fail2Ban.
 
-Writes command output to /root/stackscript.log and records /etc changes using Mercurial. When completed notifies via email.
+Writes command output to /root/stackscript.log and records /etc changes using etckeeper and git. When completed notifies via email.
+
+This StackScript is a mashup of nigma's excellent system setup StackScripts (https://github.com/nigma/StackScripts) and a92bz53/steakknife's etckeeper StackScript (https://gist.github.com/steakknife/3452111).
