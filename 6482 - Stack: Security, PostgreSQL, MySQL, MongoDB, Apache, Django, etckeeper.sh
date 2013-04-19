@@ -103,8 +103,6 @@ system_record_etc_dir_changes "Installed python" # SS124
 # lib-system - SS124
 system_install_utils
 system_install_build
-system_install_subversion
-system_install_git
 system_record_etc_dir_changes "Installed common utils"
 
 # Install and configure apache and mod_wsgi
